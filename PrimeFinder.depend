@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1607445469 source:c:\users\herbr\documents\codeblocks projektek\primefinder\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Algorithms.h"
+
+1607871166 source:c:\users\herbr\documents\codeblocks projektek\primefinder\algorithms.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+
+1607445469 c:\users\herbr\documents\codeblocks projektek\primefinder\algorithms.h
+
+1607444203 c:\users\herbr\documents\codeblocks projektek\primefinder\sievealgorithm.h
+
+1607444273 source:c:\users\herbr\documents\codeblocks projektek\primefinder\sievealgorithm.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+
