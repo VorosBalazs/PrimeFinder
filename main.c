@@ -1,30 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Algorithms.h"
+//Please set arguments before running the program
+//The three arguments should be the lower and upper limit of the check, and which method to use
+//Method 1 uses the base number, method 2 is the sieve, method 3 is a normal prime finder algorithm
+//Method 1 is only accurate up to 43, as it needs a really precise Base number for it to work
+//Please don't use method 3 for large numbers, calculating all the primes up to one million took this method 2 minutes
 
-int main(void){
-    int num;
-    printf("Please choose an option:\n");
-    printf("1: Use the sieve algorithm\n");
-    printf("2: Use the Base number\n");
-    printf("Your choice:\n");
-    scanf("%i",&num);
-    switch(num){
-        case 1:
-            takeMinMax();
-            checkMinMax();
-            SievePrimes();
-            break;
-
-        case 2:
-            printf("WARNING! This method is only precise for primes under 44!\n");
-            takeMinMax();
-            checkMinMax();
-            printPrimesBase();
-            break;
-
-        default:
-            printf("Please choose a valid option!");
-    }
+int main(int argc,char *argv[]){
+    checkArguments(argc);
+    checkMinMax(argv);
+    ChooseMethod(argv);
     return 0;
 }
